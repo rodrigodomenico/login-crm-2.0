@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Tela de Login - CRM</title>
+  </head>
+  <body class="degrade">
+    <div id="login" class="conteudo">
+      <div class="card">
+        <div class="img-bx">
+          <img src="img/login-3.png" alt="Logo lydians" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <form method="post" action="codico.html">
+              <div class="inputBox">
+                <input
+                  type="text"
+                  name="nome"
+                  class="inputUser"
+                  required="required"
+                />
+                <label for="nome" class="labelInput">Usuário</label>
+              </div>
+              <br />
+              <div class="inputBox">
+                <input
+                  type="password"
+                  id="senhaUsuario"
+                  required="required"
+                  class="inputUser"
+                />
+                <label for="nome" class="labelInput">Senha</label>
+              </div>
+              <br />
+              <div class="info-texto">
+                <a class="redfinir-senha" href="resetsenha.html"
+                  >Esqueci minha senha</a
+                >
+              </div>
+              <br />
+              <div class="btlogar">
+                <button class="sci" type="submit">Conectar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="card-2">
+        Não tem uma conta? <a href="cadastro.html">Cadastre-se</a>
+      </div>
+    </div>
+  </body>
+</html>

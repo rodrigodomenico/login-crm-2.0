@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <title>Tela de Login - CRM</title>
+  </head>
+  <script>
+    function acao() {
+      let modal = document.querySelector(".modal");
+      modal.style.display = "block";
+    }
+
+    function fechar() {
+      let modal = document.querySelector(".modal");
+      modal.style.display = "none";
+    }
+  </script>
+  <body class="degrade">
+    <div id="login" class="conteudo" style="margin-top: 4%">
+      <div class="card-cadastro">
+        <div class="img-bx">
+          <img src="img/login-3.png" alt="Logo lydians" />
+        </div>
+        <div class="content">
+          <div class="detail">
+            <form method="post" action="codico.html">
+              <div class="inputBox">
+                <input
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  class="inputUser"
+                  required="required"
+                  onkeypress="$(this).mask('00.000.000/0000-00')"
+                />
+                <label for="nome" class="labelInput">CNPJ da Empresa</label>
+              </div>
+              <br />
+              <div class="inputBox">
+                <input
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  class="inputUser"
+                  required="required"
+                />
+                <label for="nome" class="labelInput">Seu Nome</label>
+              </div>
+              <br />
+              <div class="inputBox">
+                <input
+                  type="email"
+                  name="nome"
+                  id="nome"
+                  class="inputUser"
+                  required="required"
+                />
+                <label for="nome" class="labelInput">Seu E-mail</label>
+              </div>
+              <br />
+              <div class="inputBox">
+                <input
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  class="inputUser"
+                  required="required"
+                />
+                <label for="nome" class="labelInput">Usuário</label>
+              </div>
+              <br />
+              <div class="inputBox">
+                <input
+                  type="password"
+                  name="nome"
+                  id="nome"
+                  class="inputUser"
+                  required="required"
+                />
+                <label for="nome" class="labelInput">Senha</label>
+              </div>
+              <br />
+              <div class="info-texto">
+                <label class="redfinir-senha">
+                  <input type="checkbox" required="required" id="termo" /><a
+                    class="redfinir-senha"
+                    onclick="acao()"
+                    >Aceito os termos de uso</a
+                  ></label
+                >
+              </div>
+              <br />
+              <div class="btlogar">
+                <button class="sci" type="submit">Cadastre-se</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="card-2">
+        Tem uma conta? <a href="index.html">Conecte-se</a>
+      </div>
+      <div class="modal">
+        <div class="fechar" onclick="fechar()">X</div>
+        <h1>Bem vindo ao Lydians C.R.M.</h1>
+        <h2>Condições de acesso ao conteúdo do sistema</h2>
+        <ol>
+          <li>
+            O Usuário deverá garantir que os dados pessoais fornecidos ao
+            sistema Lydians C.R.M. são verdadeiros, bem como a comunicação de
+            qualquer modificação nos mesmos.
+          </li>
+          <br />
+          <li>
+            Para a utilização dos recursos deste sistema, o usuário deverá
+            utilizar como navegador padrão o Mozilla Firefox v.10.0 ou superior.
+          </li>
+          <br />
+          <li>
+            Após a conclusão da etapa 2 - Credencial, o usuário disponibilizará
+            em seu e-mail uma chave de credenciamento ao sistema. Esta chave
+            possibilitará a continuidade de seu cadastro num prazo máximo de 24
+            horas após o recebimento da chave.
+          </li>
+          <br />
+          <li>
+            O Usuáro deverá prezar pela correta utilização do sistema, sendo que
+            a má utilização e/ou equivocada deste, poderá gerar transtornos
+            quanto à consulta de Informações disponibilizadas pelo usuário.
+          </li>
+        </ol>
+      </div>
+      <div class="modal-2"></div>
+    </div>
+  </body>
+</html>
