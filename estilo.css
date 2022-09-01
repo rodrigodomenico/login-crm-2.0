@@ -192,14 +192,14 @@ body{
   
       .redfinir-senha{
         text-decoration: none;
-        color: rgb(0, 0, 0);
+        color:  #3dacec;
         margin-left: 6px;
          cursor: pointer;
       }
 
       .redfinir-senha:hover{
         text-decoration: underline;
-       color: #000000;background-position: right center;
+       color: #3dacec;background-position: right center;
       }
 
       .conteudo{
