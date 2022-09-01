@@ -335,15 +335,15 @@ h2 {
 }
 
 .fechar{
-      width: 30px;
-      height: 30px;
+      width: 18px;
+      height: 8px;
       border-radius: 50%;
       float: right;
       cursor: pointer;
       animation: animate-3;
       animation-duration: 800ms;
       color: rgb(0, 0, 0);
-      font-size: 30px;
+      font-size: 21px;
       text-align: center;
 }
 
